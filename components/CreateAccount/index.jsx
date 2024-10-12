@@ -4,7 +4,7 @@ const CreateAccount = () => {
   return (
     <View>
       <View style={styles.img}>
-        <Image source={require("./assets/images/LeftArrow.png")} />
+        <Image source={require("../../assets/images/LeftArrow.png")} />
       </View>
       <View style={styles.main2}>
         <View style={styles.div2}>

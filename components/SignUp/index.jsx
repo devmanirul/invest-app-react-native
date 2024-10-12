@@ -5,7 +5,7 @@ const SignUp = () => {
     <View style={styles.main2}>
       <Image
         style={styles.img}
-        source={require("./assets/images/SignUp.png")}
+        source={require("../../assets/images/SignUp.png")}
       />
       <View style={styles.div2}>
         <Text style={styles.text1}>Stay on top of your finance with us.</Text>

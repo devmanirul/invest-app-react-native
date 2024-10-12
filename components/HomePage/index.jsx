@@ -1,9 +1,9 @@
-import { StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 
 const Home = () => {
   return (
     <View style={styles.main1}>
-      <Image source={require("./assets/images/Paradisehome.png")} />
+      <Image source={require("../../assets/images/Paradisehome.png")} />
     </View>
   );
 };
