@@ -1,20 +1,26 @@
-import { Image, StyleSheet, View } from "react-native";
-
-const Home = () => {
+import { Image } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+const HomePage = () => {
   return (
-    <View style={styles.main1}>
-      <Image source={require("../../assets/images/Paradisehome.png")} />
+    <View>
+      <View>
+        <Image
+          style={styles.img}
+          source={require("../../assets/images/menu.png")}
+        />
+        <Image
+          style={styles.img}
+          source={require("../../assets/images/bell.png")}
+        />
+      </View>
     </View>
   );
 };
-export default Home;
-
+export default HomePage;
 const styles = StyleSheet.create({
-  main1: {
+  navBar: {
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%",
-    backgroundColor: "#ffffff",
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
 });
