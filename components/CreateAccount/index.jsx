@@ -1,12 +1,12 @@
 import { TouchableOpacity } from "react-native";
 import { Button, Image, StyleSheet, Text, TextInput, View } from "react-native";
 
-const CreateAccount = () => {
+const CreateAccount = ({ navigation }) => {
   return (
     <View>
-      <View style={styles.img}>
+      <TouchableOpacity onPress={() => navigation.goBack()} style={styles.img}>
         <Image source={require("../../assets/images/LeftArrow.png")} />
-      </View>
+      </TouchableOpacity>
       <View style={styles.main2}>
         <View style={styles.div2}>
           <Text style={styles.text1}>Create an account</Text>
@@ -17,9 +17,12 @@ const CreateAccount = () => {
           <TextInput style={styles.textInput1} placeholder="Email address" />
           <TextInput style={styles.textInput2} placeholder="Password" />
         </View>
+        {/* btn area */}
         <View style={styles.btnArea}>
           <TouchableOpacity>
             <Text style={styles.button}>Create Account</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
             <Text style={styles.LoginText}>Already have an account?</Text>
           </TouchableOpacity>
         </View>
@@ -28,6 +31,7 @@ const CreateAccount = () => {
   );
 };
 export default CreateAccount;
+
 const styles = StyleSheet.create({
   img: {
     marginTop: 100,

@@ -1,7 +1,7 @@
 import { TouchableOpacity } from "react-native";
-import { Button, Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
-const SignUp = () => {
+const SignUp = ({ navigation }) => {
   return (
     <View style={styles.main2}>
       <Image
@@ -18,7 +18,14 @@ const SignUp = () => {
       {/* button area */}
       <View style={styles.btnArea}>
         <TouchableOpacity>
-          <Text style={styles.button}>Create account</Text>
+          <Text
+            onPress={() => navigation.navigate("CreateAccount")}
+            style={styles.button}
+          >
+            Create account
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
           <Text style={styles.LoginText}>Login</Text>
         </TouchableOpacity>
       </View>
@@ -26,6 +33,7 @@ const SignUp = () => {
   );
 };
 export default SignUp;
+
 const styles = StyleSheet.create({
   main2: {
     display: "flex",
