@@ -1,3 +1,4 @@
+import { TouchableOpacity } from "react-native";
 import { Button, Image, StyleSheet, Text, TextInput, View } from "react-native";
 
 const CreateAccount = () => {
@@ -16,13 +17,11 @@ const CreateAccount = () => {
           <TextInput style={styles.textInput1} placeholder="Email address" />
           <TextInput style={styles.textInput2} placeholder="Password" />
         </View>
-        <View style={styles.div3}>
-          <Button
-            // onPress={onPressCreateAccount}
-            title="Create account"
-            color="#31A062"
-          />
-          <Text style={styles.text3}>Already have an account?</Text>
+        <View style={styles.btnArea}>
+          <TouchableOpacity>
+            <Text style={styles.button}>Create Account</Text>
+            <Text style={styles.LoginText}>Already have an account?</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -90,15 +89,26 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
     borderRadius: 10,
   },
-  div3: {
+  btnArea: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
   },
-  button: {},
-  text3: {
+  button: {
+    paddingLeft: 100,
+    paddingRight: 100,
+    paddingTop: 15,
+    paddingBottom: 15,
+    backgroundColor: "#31A062",
+    borderRadius: 15,
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 17,
+  },
+  LoginText: {
     color: "#31A062",
-    marginTop: 20,
+    marginTop: 10,
+    textAlign: "center",
   },
 });
