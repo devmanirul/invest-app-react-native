@@ -67,6 +67,7 @@ const Homepage = () => {
           </View>
           {/* best plan card */}
           <ScrollView horizontal={true} style={styles.sliderContainer}>
+            {/* card 1 */}
             <View style={styles.card}>
               <ImageBackground
                 source={image}
@@ -77,6 +78,7 @@ const Homepage = () => {
                 <Text style={styles.cardText2}>30% Return</Text>
               </ImageBackground>
             </View>
+            {/* card 2 */}
             <View style={styles.card}>
               <ImageBackground
                 source={image1}
@@ -87,6 +89,7 @@ const Homepage = () => {
                 <Text style={styles.cardText2}>60% Return</Text>
               </ImageBackground>
             </View>
+            {/* card 3 */}
             <View style={styles.card}>
               <ImageBackground
                 source={image2}
@@ -100,10 +103,10 @@ const Homepage = () => {
           </ScrollView>
         </View>
         {/* invesment guide */}
-        <View>
-          <Text style={styles.guideViewHeading}>Investment Guide</Text>
+        {/* <View>
+          <Text style={styles.guideViewHeading}>Investment Guide</Text> */}
           {/* invesmesnt card1 */}
-          <View style={styles.guideView}>
+          {/* <View style={styles.guideView}>
             <View style={styles.guide1}>
               <Text style={styles.guide1Text1}>Basic type of investments</Text>
               <Text style={styles.guide1Text2}>
@@ -117,42 +120,43 @@ const Homepage = () => {
               </View>
             </View>
           </View>
-          <View style={styles.horizontal}></View>
+          <View style={styles.horizontal}></View> */}
           {/* invesmesnt card2 */}
-          <View style={styles.guideView}>
+          {/* <View style={styles.guideView}>
             <View style={styles.guide1}>
               <Text style={styles.guide1Text1}>How much can you start</Text>
               <Text style={styles.guide1Text2}>
                 What do you like to see? It’s a very different market from 2018.
                 The way...
               </Text>
-            </View>
-            <View style={styles.guide2}>
+            </View> */}
+            {/* <View style={styles.guide2}>
               <View style={styles.main1}>
                 <Image source={require("../../assets/images/guide2.png")} />
               </View>
             </View>
           </View>
-        </View>
+        </View> */}
       </ScrollView>
-      {/* <View style={styles.footer}>
+      {/* footer */}
+      <View style={styles.footer}>
         <TouchableOpacity style={styles.footerCard}>
-          <Image source={require("../../assets/images/Home 1.png")} />
+          <Image source={require("../../assets/images/footerHome.png")} />
           <Text style={styles.footerText}>Home</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.footerCard}>
-          <Image source={require("../../assets/images/Search 1.png")} />
+          <Image source={require("../../assets/images/footerSearch.png")} />
           <Text style={styles.footerText}>Product</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.footerCard}>
-          <Image source={require("../../assets/images/transaction 1.png")} />
+          <Image source={require("../../assets/images/transactionArrow.png")} />
           <Text style={styles.footerText}>Transaction</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.footerCard}>
-          <Image source={require("../../assets/images/Home 1.png")} />
+          <Image source={require("../../assets/images/profileImge.png")} />
           <Text style={styles.footerText}>Account</Text>
         </TouchableOpacity>
-      </View> */}
+      </View>
     </View>
   );
 };
@@ -161,38 +165,48 @@ export default Homepage;
 
 const styles = StyleSheet.create({
   body: { marginTop: 40, marginRight: 15, marginLeft: 15 },
-  main: { height: "100%" },
   navbarContainer: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
     height: 40,
+    borderWidth: 1,
+    borderBottomColor: "black",
+  },
+  main: {
+    // height: "100%",
+    borderWidth: 1,
+    borderBottomColor: "black",
   },
   welcomeText: { fontSize: 30, fontWeight: "bold", lineHeight: 44 },
   assetCard: {
     backgroundColor: "#31A078",
-    paddingTop: 20,
-    paddingBottom: 20,
+    paddingTop: 10,
+    paddingBottom: 15,
     paddingLeft: 25,
-    marginTop: 30,
+    marginTop: 25,
     borderRadius: 20,
   },
   amountContainer: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 10,
+    marginTop: 8,
   },
   yourAssetText: { color: "white", fontSize: 14, fontWeight: "medium" },
-  amountN: { color: "white", fontSize: 30, fontWeight: "semibold" },
+  amountN: { color: "white", fontSize: 28, fontWeight: "semibold" },
   button: {
     backgroundColor: "#FEFEFE",
     paddingLeft: 18,
     paddingRight: 18,
-    paddingTop: 1,
-    paddingBottom: 1,
-    borderRadius: 14,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    borderRadius: 10,
     marginRight: 8,
+    paddingBottom: 1,
+    marginTop: 3,
+    marginBottom: 3,
   },
   buttonText: { color: "#31A078", fontSize: 14, fontWeight: "semibold" },
   bestPlan: { paddingTop: 20 },
@@ -239,12 +253,16 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    borderWidth: 1,
+    borderBottomColor: "black",
   },
   footerCard: {
     width: "25%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    borderWidth: 1,
+    borderBottomColor: "black",
   },
   footerText: { color: "#32A078" },
   guideViewHeading: {
@@ -253,7 +271,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
   },
   guideView: {
-    marginTop: 15,
+    marginTop: 10,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
