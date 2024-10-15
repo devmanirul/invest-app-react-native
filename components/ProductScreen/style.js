@@ -14,7 +14,16 @@ const styles = StyleSheet.create({
   },
   main: {
     height: "100%",
-    backgroundColor: "green",
+    // backgroundColor: "green",
+  },
+  productCard: {
+    padding: 20,
+    backgroundColor: "white",
+    marginTop: 3,
+  },
+  productCardText: {
+    fontSize: 20,
+    fontWeight: "semibold",
   },
   footer: {
     height: 40,
