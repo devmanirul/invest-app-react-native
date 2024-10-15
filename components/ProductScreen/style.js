@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
     fontWeight: "semibold",
   },
   footer: {
-    height: 40,
-    backgroundColor: "gray",
+    // height: 40,
+    backgroundColor: "yellow",
   },
 });
 

@@ -3,7 +3,7 @@ import { Button, Image, StyleSheet, Text, TextInput, View } from "react-native";
 
 const CreateAccount = ({ navigation }) => {
   return (
-    <View>
+    <View style={styles.mainBg}>
       <TouchableOpacity onPress={() => navigation.goBack()} style={styles.img}>
         <Image source={require("../../assets/images/LeftArrow.png")} />
       </TouchableOpacity>
@@ -33,10 +33,14 @@ const CreateAccount = ({ navigation }) => {
 export default CreateAccount;
 
 const styles = StyleSheet.create({
+  mainBg: {
+    height: "100%",
+    backgroundColor: "white",
+  },
   img: {
     marginTop: 100,
     marginLeft: 20,
-    height: "3%",
+    height: "7%",
     width: "7%",
   },
   main2: {

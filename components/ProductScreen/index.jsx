@@ -2,7 +2,8 @@ import { View, Text, ScrollView, FlatList } from "react-native";
 import styles from "./style";
 import productsData from "../../constant/products.constant";
 import { TouchableOpacity } from "react-native";
-const ProductScreen = () => {
+import Footer from "../shared/Footer";
+const ProductScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text>ProductScreen</Text>
@@ -17,7 +18,9 @@ const ProductScreen = () => {
           </TouchableOpacity>
         )}
       />
-      <View style={styles.footer}></View>
+      <View style={styles.footer}>
+        <Footer navigation={navigation} />
+      </View>
     </View>
   );
 };

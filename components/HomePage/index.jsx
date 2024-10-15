@@ -1,37 +1,11 @@
-import {
-  Image,
-  ImageBackground,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { Image, ImageBackground, ScrollView, Text, View } from "react-native";
 import React from "react";
 import { TouchableOpacity } from "react-native";
-
 import image from "../../assets/images/Card1.png";
 import image1 from "../../assets/images/Card2.png";
 import image2 from "../../assets/images/Card3.png";
 import styles from "./style";
-// import guide1 from "../../assets/images/guide1.png";
-// import guide2 from "../../assets/images/guide2.png";
-
-// const investGuide = [
-//   {
-//     id: 1,
-//     title: "Basic type of investments",
-//     description:
-//       "This is how you set your foot for 2020 Stock market recession. What’s next...",
-//     img: "guide1",
-//   },
-//   {
-//     id: 2,
-//     title: "How much can you start",
-//     description:
-//       "What do you like to see? It’s a very different market from 2018. The way...",
-//     img: "guide2",
-//   },
-// ];
+import Footer from "../shared/Footer";
 
 const Homepage = ({ navigation }) => {
   return (
@@ -144,27 +118,7 @@ const Homepage = ({ navigation }) => {
         </View>
       </ScrollView>
       {/* footer */}
-      <View style={styles.footer}>
-        <TouchableOpacity style={styles.footerCard}>
-          <Image source={require("../../assets/images/footerHome.png")} />
-          <Text style={styles.footerText}>Home</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("ProductScreen")}
-          style={styles.footerCard}
-        >
-          <Image source={require("../../assets/images/footerSearch.png")} />
-          <Text style={styles.footerText}>Product</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.footerCard}>
-          <Image source={require("../../assets/images/transactionArrow.png")} />
-          <Text style={styles.footerText}>Transaction</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.footerCard}>
-          <Image source={require("../../assets/images/profileImge.png")} />
-          <Text style={styles.footerText}>Account</Text>
-        </TouchableOpacity>
-      </View>
+      <Footer style={styles.footer} navigation={navigation} />
     </View>
   );
 };

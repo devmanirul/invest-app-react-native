@@ -86,25 +86,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     lineHeight: 44,
   },
-  footer: {
-    height: 70,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  footerCard: {
-    width: "25%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  footerText: { color: "#32A078" },
-  guideViewHeading: {
-    marginTop: 25,
-    fontWeight: "bold",
-    fontSize: 22,
-  },
+
   guideView: {
     marginTop: 10,
     display: "flex",
@@ -130,6 +112,7 @@ const styles = StyleSheet.create({
   guide2: {
     width: "20%",
   },
+  footer: {},
 });
 
 export default styles;
