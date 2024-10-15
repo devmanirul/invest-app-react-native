@@ -15,7 +15,7 @@ const Homepage = ({ navigation }) => {
         <TouchableOpacity>
           <Image source={require("../../assets/images/menu.png")} />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Notification")}>
           <Image source={require("../../assets/images/bell.png")} />
         </TouchableOpacity>
       </View>
@@ -79,7 +79,7 @@ const Homepage = ({ navigation }) => {
         </View>
         {/* invesTment guide */}
         <View>
-          <Text style={styles.guideViewHeading}>Investment Guide</Text>
+          <Text style={styles.guideHeading}>Investment Guide</Text>
           {/* invesmesnt card1 */}
           <View style={styles.guideView}>
             <View style={styles.guide1}>

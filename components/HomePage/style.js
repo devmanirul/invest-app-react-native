@@ -97,6 +97,11 @@ const styles = StyleSheet.create({
   guide1: {
     width: "80%",
   },
+  guideHeading: {
+    fontSize: 22,
+    fontWeight: "bold",
+    marginTop: 20,
+  },
   guide1Text1: {
     fontWeight: "bold",
     fontSize: 18,

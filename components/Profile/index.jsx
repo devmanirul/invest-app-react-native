@@ -61,3 +61,7 @@ const styles = StyleSheet.create({
   },
   expert: { fontSize: 17 },
 });
+
+
+  /* <Stack.Screen name="Profile" component={Profile} />; */
+
