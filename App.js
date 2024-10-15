@@ -6,6 +6,7 @@ import SignUp from "./components/SignUp";
 import CreateAccount from "./components/CreateAccount";
 import ProductScreen from "./components/ProductScreen";
 import Profile from "./components/Profile";
+import Notification from "./components/Notification";
 
 const Stack = createNativeStackNavigator();
 
