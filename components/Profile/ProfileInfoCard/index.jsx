@@ -9,7 +9,7 @@ const ProfileInfo = ({ icon, image, title }) => {
         <View style={styles.img}>
           <Image source={image} />
         </View>
-        <Text style={styles.text}>{title}</Text>
+        <Text style={styles.cardText}>{title}</Text>
         <View style={styles.icon}>
           <Image source={icon} />
         </View>
@@ -27,11 +27,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-
     backgroundColor: "white",
     paddingTop: 22,
     paddingBottom: 22,
-    marginBottom: 10,
+    marginBottom: 12,
+    borderRadius: 5,
   },
   img: {
     width: "20%",
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  text: { width: "60%", fontSize: 20, fontWeight: "bold" },
+  cardText: { width: "60%", fontSize: 18, fontWeight: "bold" },
   icon: {
     width: "20%",
     display: "flex",

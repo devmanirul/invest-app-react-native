@@ -7,6 +7,7 @@ import CreateAccount from "./components/CreateAccount";
 import ProductScreen from "./components/ProductScreen";
 import Profile from "./components/Profile";
 import Notification from "./components/Notification";
+import ContactInfo from "./components/ContactInfo";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,8 @@ export default function App() {
         <Stack.Screen name="CreateAccount" component={CreateAccount} />
         <Stack.Screen name="HomePage" component={HomePage} />
         <Stack.Screen name="ProductScreen" component={ProductScreen} />
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="ContactInfo" component={ContactInfo} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -20,7 +20,7 @@ const Profile = ({ navigation }) => {
       <Text style={styles.title}>Profile</Text>
       {/* main */}
       <ScrollView>
-        <View style={styles.imageSection}>
+        <View style={styles.profileImage}>
           <Image source={require("../../assets/images/profileImg.png")} />
           <Text style={styles.nameText}>Jonas Macroni</Text>
           <Text style={styles.expert}>Expert</Text>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   title: { fontSize: 26, fontWeight: "bold", marginTop: 15, marginBottom: 15 },
   main: { height: "100%" },
-  imageSection: {
+  profileImage: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -61,7 +61,3 @@ const styles = StyleSheet.create({
   },
   expert: { fontSize: 17 },
 });
-
-
-  /* <Stack.Screen name="Profile" component={Profile} />; */
-
