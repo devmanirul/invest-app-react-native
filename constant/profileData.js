@@ -4,6 +4,7 @@ const ProfileData = [
     image: require("../assets/images/contact.png"),
     title: "Contact Info",
     icon: require("../assets/images/rightArrow.png"),
+    name: "ContactInfo",
   },
   {
     id: 2,

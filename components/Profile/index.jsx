@@ -19,7 +19,7 @@ const Profile = ({ navigation }) => {
       </TouchableOpacity>
       <Text style={styles.title}>Profile</Text>
       {/* main */}
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.profileImage}>
           <Image source={require("../../assets/images/profileImg.png")} />
           <Text style={styles.nameText}>Jonas Macroni</Text>
@@ -27,7 +27,7 @@ const Profile = ({ navigation }) => {
         </View>
         <View>
           {ProfileData.map((data) => (
-            <ProfileInfo key={data.id} {...data} />
+            <ProfileInfo key={data.id} {...data} navigation={navigation} />
           ))}
         </View>
       </ScrollView>
