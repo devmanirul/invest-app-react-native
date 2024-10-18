@@ -20,7 +20,7 @@ const Homepage = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       {/* main */}
-      <ScrollView style={styles.main}>
+      <ScrollView showsVerticalScrollIndicator={false} style={styles.main}>
         <Text style={styles.welcomeText}>Welcome, Jessie.</Text>
         {/* hero section */}
         <View style={styles.assetCard}>
@@ -118,7 +118,7 @@ const Homepage = ({ navigation }) => {
         </View>
       </ScrollView>
       {/* footer */}
-      <Footer style={styles.footer} navigation={navigation} />
+      <Footer navigation={navigation} />
     </View>
   );
 };

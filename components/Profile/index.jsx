@@ -31,7 +31,7 @@ const Profile = ({ navigation }) => {
           ))}
         </View>
       </ScrollView>
-      <Footer navigation={navigation} />
+      <Footer navigation={navigation} className="" />
     </View>
   );
 };

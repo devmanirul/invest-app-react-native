@@ -15,7 +15,9 @@ const Footer = ({ navigation }) => {
         style={styles.footerCard}
       >
         <Image source={require("../../../assets/images/footerSearch.png")} />
-        <Text style={styles.footerText}>Product</Text>
+        <Text style={styles.footerText} className="hover:text-#32A078">
+          Product
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.footerCard}>
         <Image
@@ -48,7 +50,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
   },
-  footerText: { color: "#32A078" },
+  footerText: { color: "#999999" },
   guideViewHeading: {
     marginTop: 25,
     fontWeight: "bold",

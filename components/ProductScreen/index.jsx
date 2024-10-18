@@ -9,6 +9,7 @@ const ProductScreen = ({ navigation }) => {
       <Text>ProductScreen</Text>
       <View style={styles.header}></View>
       <FlatList
+        showsVerticalScrollIndicator={false}
         data={productsData}
         renderItem={({ item }) => (
           <TouchableOpacity>
