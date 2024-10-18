@@ -17,6 +17,7 @@ const ProfileData = [
     image: require("../assets/images/bank.png"),
     title: "Bank Account Info",
     icon: require("../assets/images/rightArrow.png"),
+    name: "Bank",
   },
   {
     id: 4,

@@ -8,6 +8,7 @@ import ProductScreen from "./components/ProductScreen";
 import Profile from "./components/Profile";
 import Notification from "./components/Notification";
 import ContactInfo from "./components/ContactInfo";
+import Bank from "./components/Bank";
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,8 @@ export default function App() {
         <Stack.Screen name="ProductScreen" component={ProductScreen} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="ContactInfo" component={ContactInfo} />
+        <Stack.Screen name="Notification" component={Notification} />
+        <Stack.Screen name="Bank" component={Bank} />
       </Stack.Navigator>
     </NavigationContainer>
   );
