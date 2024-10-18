@@ -1,18 +1,24 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import {
+  Image,
+  NativeEventEmitter,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import React from "react";
 import { TouchableOpacity } from "react-native";
 
 const ProfileInfo = ({ icon, image, name, title, navigation }) => {
+  const handleNavigation = () => {
+    navigation.navigate(name);
+    console.log(name);
+  };
   return (
-    <TouchableOpacity onPress={() => navigation.navigate(name)}>
+    <TouchableOpacity onPress={handleNavigation}>
       <View style={styles.card}>
-        <View style={styles.img}>
-          <Image source={image} />
-        </View>
+        <View style={styles.img}>{/* <Image source={image} /> */}</View>
         <Text style={styles.cardText}>{title}</Text>
-        <View style={styles.icon}>
-          <Image source={icon} />
-        </View>
+        <View style={styles.icon}>{/* <Image source={icon} /> */}</View>
       </View>
     </TouchableOpacity>
   );

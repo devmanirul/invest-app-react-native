@@ -44,7 +44,7 @@ const ContactInfo = ({ navigation }) => {
       {/* heading end */}
       {/* Profile file pic */}
       <View className="mt-5 w-40 h-40 rounded-full relative mx-auto">
-        <Image source={{ uri: image }} className="w-full h-full rounded-full" />
+        <Image source={image} className="w-full h-full rounded-full" />
         <View className="bg-black/30 absolute inset-0 z-10 h-full w-full rounded-full"></View>
         {/* <Button title="Pick an image from camera roll"  />
         {image && <Image source={{ uri: image }} className="h-20 w-20 rounded-full mx-auto mt-5" />} */}

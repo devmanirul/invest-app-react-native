@@ -1,35 +1,36 @@
+import contactImg1 from "../assets/images/contact.png";
+import contactImg2 from "../assets/images/Source.png";
+import contactImg3 from "../assets/images/bank.png";
+import contactImg4 from "../assets/images/doc.png";
+import contactImg5 from "../assets/images/setting.png";
+
 const ProfileData = [
   {
     id: 1,
-    image: require("../assets/images/contact.png"),
+    image: contactImg1,
     title: "Contact Info",
-    icon: require("../assets/images/rightArrow.png"),
     name: "ContactInfo",
   },
   {
     id: 2,
-    image: require("../assets/images/Source.png"),
+    image: contactImg2,
     title: "Source of Funding Info",
-    icon: require("../assets/images/rightArrow.png"),
   },
   {
     id: 3,
-    image: require("../assets/images/bank.png"),
+    image: contactImg3,
     title: "Bank Account Info",
-    icon: require("../assets/images/rightArrow.png"),
     name: "Bank",
   },
   {
     id: 4,
-    image: require("../assets/images/doc.png"),
+    image: contactImg4,
     title: "Document Info",
-    icon: require("../assets/images/rightArrow.png"),
   },
   {
     id: 5,
-    image: require("../assets/images/setting.png"),
+    image: contactImg5,
     title: "Settings ",
-    icon: require("../assets/images/rightArrow.png"),
   },
 ];
 export default ProfileData;
